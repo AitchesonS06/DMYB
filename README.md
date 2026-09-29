@@ -1,6 +1,6 @@
 # Damn Marto, You Buggin
 
-Personal portfolio site: cybersecurity, business administration, and music production with Lost & Hound.
+Personal portfolio site: Cybersecurity & Business Administration major, developer at Lost & Hound, and music producer.
 
 The site is plain HTML/CSS/JS in [`docs/`](docs/), with no build step.
 
