@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Damn Marto, You Buggin</title>
+  <meta name="description" content="Portfolio of Marto — cybersecurity, business administration, and music production with Lost & Hound.">
+  <meta property="og:title" content="Damn Marto, You Buggin">
+  <meta property="og:description" content="Cybersecurity × Business × Music.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0c0f'/><text x='50' y='66' font-family='monospace' font-size='52' font-weight='700' text-anchor='middle' fill='%23b6ff3b'>DM</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="nav__logo" href="#top" aria-label="Home">DMYB<span class="blink">_</span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+    <nav id="nav-links" class="nav__links">
+      <a href="#about">About</a>
+      <a href="#security">Security</a>
+      <a href="#business">Business</a>
+      <a href="#music">Music</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--small" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas class="hero__wave" aria-hidden="true"></canvas>
+      <div class="hero__inner">
+        <p class="eyebrow">// portfolio.exe</p>
+        <h1 class="hero__title glitch" data-text="Damn Marto, You Buggin">
+          Damn Marto,<br>You Buggin
+        </h1>
+        <div class="terminal" role="img" aria-label="Terminal: whoami — cybersecurity, business administration, music producer">
+          <div class="terminal__bar"><i></i><i></i><i></i><span>marto@dmyb: ~</span></div>
+          <pre class="terminal__body"><span class="prompt">$</span> whoami
+<span class="typed" data-lines="cybersecurity major|business administration major|producer @ lost &amp; hound|finding bugs. making beats."></span><span class="caret"></span></pre>
+        </div>
+        <div class="hero__cta">
+          <a class="btn" href="#music">Hear the music</a>
+          <a class="btn btn--ghost" href="#security">See the work</a>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#about" aria-label="Scroll to about">scroll ↓</a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="track">00</span>
+        <h2>Intro</h2>
+      </div>
+      <div class="about reveal">
+        <div class="about__text">
+          <!-- EDIT: rewrite this in your own voice -->
+          <p class="lead">I break things so they can be built back stronger, whether that's a network, a business plan, or a beat.</p>
+          <p>I'm studying <strong>Cybersecurity</strong> and <strong>Business Administration</strong>, working where technical security meets the decisions organizations actually make. Outside the classroom I produce music with <strong>Lost &amp; Hound</strong>.</p>
+          <p>Same instinct in every lane: look closely, find what's off, and fix it.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Based</dt><dd>[City, State]</dd></div>
+          <div><dt>School</dt><dd>[University]</dd></div>
+          <div><dt>Majors</dt><dd>Cybersecurity + Business Admin</dd></div>
+          <div><dt>Grad</dt><dd>[Class of 20XX]</dd></div>
+          <div><dt>Status</dt><dd><span class="dot"></span> Open to internships / co-ops</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ SECURITY ============ -->
+    <section class="section" id="security">
+      <div class="section__head reveal">
+        <span class="track">01</span>
+        <h2>Security</h2>
+        <p class="section__sub">Side A: finding the bugs.</p>
+      </div>
+
+      <!-- EDIT: one .card per project. Duplicate/remove as needed. -->
+      <div class="grid reveal">
+        <article class="card">
+          <p class="card__tag">[Lab · CTF · Research]</p>
+          <h3>[Project name]</h3>
+          <p>[One or two sentences: what you did, the tools you used, and the result.]</p>
+          <a class="card__link" href="#">View writeup →</a>
+        </article>
+        <article class="card">
+          <p class="card__tag">[Category]</p>
+          <h3>[Project name]</h3>
+          <p>[One or two sentences: what you did, the tools you used, and the result.]</p>
+          <a class="card__link" href="#">View on GitHub →</a>
+        </article>
+        <article class="card">
+          <p class="card__tag">[Category]</p>
+          <h3>[Project name]</h3>
+          <p>[One or two sentences: what you did, the tools you used, and the result.]</p>
+          <a class="card__link" href="#">Details →</a>
+        </article>
+      </div>
+
+      <div class="skills reveal">
+        <h3 class="skills__title">Toolkit</h3>
+        <!-- EDIT: replace with your real skills and certs -->
+        <ul class="chips">
+          <li>[Skill]</li><li>[Tool]</li><li>[Language]</li><li>[Framework]</li><li>[Certification]</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ BUSINESS ============ -->
+    <section class="section" id="business">
+      <div class="section__head reveal">
+        <span class="track">02</span>
+        <h2>Business</h2>
+        <p class="section__sub">Side B: making it make sense.</p>
+      </div>
+
+      <!-- EDIT: experience timeline, newest first -->
+      <ol class="timeline reveal">
+        <li>
+          <span class="timeline__date">[Mon YYYY – Present]</span>
+          <div>
+            <h3>[Role] · <span class="muted">[Organization]</span></h3>
+            <p>[What you owned, what changed because of you. Numbers help.]</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline__date">[Mon YYYY – Mon YYYY]</span>
+          <div>
+            <h3>[Role] · <span class="muted">[Organization]</span></h3>
+            <p>[What you owned, what changed because of you.]</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline__date">[Mon YYYY – Mon YYYY]</span>
+          <div>
+            <h3>[Club / Leadership] · <span class="muted">[Organization]</span></h3>
+            <p>[Leadership, case competitions, relevant coursework.]</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ MUSIC ============ -->
+    <section class="section section--music" id="music">
+      <div class="section__head reveal">
+        <span class="track">03</span>
+        <h2>Music</h2>
+        <p class="section__sub">Bonus track: Lost &amp; Hound.</p>
+      </div>
+
+      <div class="music reveal">
+        <div class="music__text">
+          <p class="lead">When I'm not in a terminal, I'm in a DAW.</p>
+          <!-- EDIT: describe your role with Lost & Hound -->
+          <p>I produce with <strong>Lost &amp; Hound</strong>. [Say what you do: production, mixing, sound design. Name the genre, releases, and artists you've worked with.]</p>
+          <ul class="links">
+            <!-- EDIT: add your real links -->
+            <li><a href="#" target="_blank" rel="noopener">Spotify ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener">SoundCloud ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Apple Music ↗</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Instagram ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="player">
+          <!--
+            EDIT: paste a Spotify / SoundCloud / YouTube embed here and delete the .player__placeholder div.
+            Spotify: open a track → Share → Embed track → copy the <iframe>.
+          -->
+          <div class="player__placeholder">
+            <div class="vinyl" aria-hidden="true"><div class="vinyl__label">L&amp;H</div></div>
+            <p class="mono">[ embed your latest release here ]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="contact reveal">
+        <span class="track">04</span>
+        <h2 class="contact__title">Let's build something<br><span class="accent">(or break it).</span></h2>
+        <p class="section__sub">Security, business, or a session in the studio. Reach out.</p>
+        <!-- EDIT: your contact email -->
+        <a class="contact__email" href="mailto:you@example.com">you@example.com</a>
+        <ul class="socials">
+          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Damn Marto, You Buggin</span>
+    <span class="mono muted">0 known vulnerabilities · 120 BPM</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
