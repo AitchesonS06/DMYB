@@ -1,15 +1,15 @@
 # Damn Marto, You Buggin
 
-Personal portfolio site: Cybersecurity & Business Administration major, developer at Lost & Hound, and music producer.
+Portfolio site for Shamar Aitcheson (MartoDaGeneral): Cybersecurity & Business Administration at Northeastern, developer on Lost & Hound, and music producer.
 
 The site is plain HTML/CSS/JS in [`docs/`](docs/), with no build step.
 
 ```
 docs/
-├── index.html   ← all content (search for "EDIT:" and "[" placeholders)
+├── index.html   ← all page content
 ├── styles.css   ← colors/fonts are tokens at the top of the file
 ├── script.js    ← terminal typing, waveform, glitch, scroll reveals
-└── assets/      ← put resume.pdf (and any images) here
+└── assets/      ← images and files (e.g. resume.pdf)
 ```
 
 ## Preview locally
