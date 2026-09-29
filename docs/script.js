@@ -72,6 +72,40 @@
     });
   });
 
+  // ---------- YouTube: swap thumbnail for the player on click ----------
+  document.querySelectorAll(".yt__video").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const thumb = link.querySelector(".yt__thumb");
+      if (thumb.querySelector("iframe")) return;
+      e.preventDefault();
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://www.youtube-nocookie.com/embed/${link.dataset.id}?autoplay=1&rel=0`;
+      iframe.title = link.getAttribute("aria-label");
+      iframe.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      iframe.allowFullscreen = true;
+      thumb.replaceChildren(iframe);
+    });
+  });
+
+  // ---------- Count up the YouTube view total when it scrolls in ----------
+  const counter = document.querySelector("[data-count]");
+  if (counter && "IntersectionObserver" in window && !reduceMotion) {
+    const target = Number(counter.dataset.count);
+    const fmt = new Intl.NumberFormat("en-US");
+    const io = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      io.disconnect();
+      const start = performance.now();
+      const step = (now) => {
+        const p = Math.min((now - start) / 1600, 1);
+        counter.textContent = fmt.format(Math.round(target * (1 - Math.pow(1 - p, 3))));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }, { threshold: 0.6 });
+    io.observe(counter);
+  }
+
   // ---------- Hero waveform (canvas) ----------
   const canvas = document.querySelector(".hero__wave");
   const ctx = canvas.getContext("2d");
