@@ -272,10 +272,10 @@ p { margin: 0 0 1em; }
 .music { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
 .music__text p:not(.lead) { color: var(--muted); }
 .music__text strong { color: var(--text); font-weight: 500; }
-.stats { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 0; }
-.stats div { flex: 1 1 110px; padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-2); }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 24px 0 0; }
+.stats div { padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-2); }
 .stats dt { font: .7rem var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
-.stats dd { margin: 4px 0 0; font-size: 1.15rem; font-weight: 700; color: var(--hot); }
+.stats dd { margin: 4px 0 0; white-space: nowrap; font-size: 1.15rem; font-weight: 700; color: var(--hot); }
 .links { list-style: none; padding: 0; margin: 24px 0 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .links a {
   display: inline-block; font: 500 .85rem var(--mono); text-decoration: none;
